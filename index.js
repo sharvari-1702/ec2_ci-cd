@@ -14,7 +14,7 @@ app.set("views", path.join(__dirname, "views"));
 
 // Route to show login page
 app.get("/", (req, res) => {
-  res.render("login    ");
+  res.render("login");
 });
 
 // Handle login form submit
