@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-              cd ec2_practice
+              cd ec2_ci-cd
               git pull origin main
               npm install
               pm2 start index.js --name myapp || pm2 restart myapp
